@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+/backend/.env
+/backend/.env.local
+/backend/.env.development.local
+/backend/.env.test.local
+/backend/.env.production.local
+
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.DS_Store
+
+# OS Files
+Thumbs.db
+Desktop.ini
+
+# Backend Specific
+/backend/node_modules/
+/backend/package-lock.json
+/backend/dist/
+
+# Frontend Specific
+/frontend/node_modules/
+/frontend/package-lock.json
+/frontend/build/
+
+.env
