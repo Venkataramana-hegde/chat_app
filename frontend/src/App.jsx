@@ -9,13 +9,15 @@ import ProfilePage from "./pages/ProfilePage";
 import SignUpPage from "./pages/SignUpPage";
 
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { axiosInstance } from './lib/axios';
+
 import { useAuthStore } from './store/useAuthStore';
+import { useThemeStore } from './store/useThemeStore';
 import { Toaster } from 'react-hot-toast';
 
 const App = () => {
 
-  const {authUser, checkAuth, isCheckingAuth} = useAuthStore()
+  const {authUser, checkAuth, isCheckingAuth} = useAuthStore();
+  const {theme} = useThemeStore();
 
   useEffect(() => {
     checkAuth()
@@ -30,7 +32,7 @@ const App = () => {
   )
 
   return (
-    <div>
+    <div data-theme={theme}>
       <Navbar />
 
       <Routes>
