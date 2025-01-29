@@ -13,6 +13,8 @@ export const getUserForSidebar = async(req, res) => {
     }
 }
 
+// empty push
+
 export const getMessages = async(req, res) => {
     try {
         const { id:userToChatId }  = req.params
